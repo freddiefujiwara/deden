@@ -16,6 +16,7 @@
   line-height:400px;
   text-align:center;
   vertical-align:middle;
+  display:block;
   }
 
   #center-image {
@@ -23,18 +24,14 @@
   }
 
   body {background:#000}
-  a {display:block}
   /*]]>*/
   </style>
 </head>
 
 <body>
-  <a href="javascript:(function(){document.getElementById('deden').play();})();" >
-    <div id="wrapper">
-      <img src="./image/deden.png" id="center-image" name=
-      "center-image" /> 
-    </div>
-  </a>
+   <a id="wrapper" href="#" onclick="javascript:(function(){document.getElementById('deden').play();})();">
+       <img src="./image/deden.png" id="center-image" name="center-image" /> 
+   </a>
    <audio id="deden" preload>
     <source src="./sound/deden.wav"> 
     <source src="./sound/deden.ogg"> 
