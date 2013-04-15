@@ -15,7 +15,12 @@
   vertical-align:middle;
   display:block;
   margin:auto;
-  height:auto;
+  position:absolute; 
+  margin:auto; 
+  top:0; 
+  bottom:0; 
+  left:0; 
+  right:0;
   }
 
   #center-image {
@@ -28,7 +33,7 @@
 </head>
 
 <body>
-   <a id="wrapper" href="#" onclick="javascript:(function(){document.getElementById('deden').play();})();">
+   <a id="wrapper" href="#" onclick="javascript:(function(){var width = window.innerWidth; document.getElementById('wrapper').setAttribute('style', 'width:'+width+'px; height:auto;');document.getElementById('deden').play();})();">
        <img src="./image/deden.png" id="center-image" name="center-image" /> 
    </a>
    <audio id="deden">
