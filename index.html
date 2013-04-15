@@ -10,11 +10,7 @@
   <style type="text/css">
 /*<![CDATA[*/
 
-  #wrapper {
-  text-align:center;
-  vertical-align:middle;
-  display:block;
-  margin:auto;
+  #logo {
   position:absolute; 
   margin:auto; 
   top:0; 
@@ -23,19 +19,13 @@
   right:0;
   }
 
-  #center-image {
-  vertical-align:middle;
-  }
-
   body {background:#000}
   /*]]>*/
   </style>
 </head>
 
-<body>
-   <a id="wrapper" href="#" onclick="javascript:(function(){var width = window.innerWidth; document.getElementById('wrapper').setAttribute('style', 'width:'+width+'px; height:auto;');document.getElementById('deden').play();})();">
-       <img src="./image/deden.png" id="center-image" name="center-image" /> 
-   </a>
+<body onload="javascript:(function(){var width = window.innerWidth; document.getElementById('wrapper').setAttribute('style', 'width:'+width+'px; height:auto;');})();">
+   <img src="./image/deden.png" id="logo" name="center-image" onclick="javascript:(function(){document.getElementById('deden').play();})();" /> 
    <audio id="deden">
     <source src="./sound/deden.wav"> 
     <source src="./sound/deden.ogg"> 
